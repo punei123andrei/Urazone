@@ -1,0 +1,28 @@
+/*!**************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/css/style.css ***!
+  \**************************************************************************************************************************************************************************/
+#urazone-content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#inspyde-table tr:nth-child(odd) {
+    background-color: #9fc65d;
+}
+
+#inspyde-table tr:nth-child(even) {
+    background-color: #e0f4cb;
+}
+#inspyde-table tr {
+    text-align: center;
+}
+#inspyde-table a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*# sourceMappingURL=style-index.css.map*/

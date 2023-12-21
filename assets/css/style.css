@@ -1,0 +1,22 @@
+#urazone-content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#inspyde-table tr:nth-child(odd) {
+    background-color: #9fc65d;
+}
+
+#inspyde-table tr:nth-child(even) {
+    background-color: #e0f4cb;
+}
+#inspyde-table tr {
+    text-align: center;
+}
+#inspyde-table a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,49 @@
+{
+    "name": "apiusers/api-users",
+    "description": "A plugin for displaying users from https://jsonplaceholder.typicode.com",
+    "type": "project",
+    "license": "GPL-3.0",
+   "authors": [
+        {
+            "name": "Andrei",
+            "email": "punei.andrei123@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=7.2",
+      "micropackage/requirements": "^1.0"
+    },
+    "config": {
+      "optimize-autoloader": true,
+      "skip-dev": true,
+      "allow-plugins": {
+        "ffraenz/private-composer-installer": true,
+        "composer/installers": true,
+        "dealerdirect/phpcodesniffer-composer-installer": true
+      }
+    },
+    "autoload": {
+      "psr-4": {
+        "URAZone\\": "src/"
+      }
+    },
+    "extra": {
+      "installer-paths": {
+        "vendor/{$name}/": [
+          "type:wordpress-plugin"
+        ]
+      }
+    },
+    "require-dev": {
+      "roave/security-advisories": "dev-latest",
+      "phpcompatibility/phpcompatibility-wp": "dev-master",
+      "phpunit/phpunit": "^9.5",
+      "brain/monkey": "^2",
+      "inpsyde/php-coding-standards": "^1.0"
+    },
+    "scripts": {
+      "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs phpcs --standard=WordPress",
+      "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
+    }
+  }
